@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Жаңлыбай Ақнұр — Жеке бет</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: radial-gradient(circle at 10% 20%, #1e3a8a 0%, #1e293b 100%);
+      overflow-x: hidden;
+    }
+
+    /* ==== Background Animation ==== */
+    .bg-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #3b82f6, #9333ea, #0ea5e9, #14b8a6);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 25px rgba(255,255,255,0.3);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      backdrop-filter: blur(20px);
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #facc15;
+      margin-bottom: .5rem;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      display: inline-block;
+      padding-bottom: .3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: '✦';
+      color: #a5b4fc;
+      margin-right: .6rem;
+    }
+
+    audio {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 0.8rem;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      border: 2px solid white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      transition: 0.3s;
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .social a:hover {
+      background: white;
+      color: #1e3a8a;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Small screen adaptation */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      main { margin: 1rem; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <header>
+    <img src="https://files.catbox.moe/1ijyzx.jpeg" alt="Жаңлыбай Ақнұрдың суреті" />
+    <h1>Жаңлыбай Ақнұр</h1>
+    <p class="subtitle">Әлеуметтік жұмыс | Есіл университеті | Шығармашылыққа құштар</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Мен туралы</h2>
+      <p>
+        Мен — Есіл университетінде оқитын студентпін. Кітап оқуға және жаңа білім алуға ерекше қызығамын.Түркістан облысы,Сарыағаш ауданы тумасымын.
+        Әлеуметтік жұмыс мамандығын таңдауымның себебі — адамдарға көмектесіп, қоғамға пайда әкелу. 
+        Өз ісімнің кәсіби маманы болу — басты мақсаттарымның бірі.
+      </p>
+    </section>
+
+    <section>
+      <h2>Мақсаттарым</h2>
+      <ul>
+        <li>Өз мамандығым бойынша үздік маман атану</li>
+        <li>Адамдарға көмектесетін әлеуметтік жобалар жасау</li>
+        <li>Білім мен кітап арқылы өзін-өзі дамыту</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Сүйікті музыка</h2>
+      <audio controls>
+        <source src="https://files.catbox.moe/76z72m.mp3" type="audio/mpeg" />
+        Сіздің браузеріңіз аудио ойнатуды қолдамайды.
+      </audio>
+    </section>
+
+    <div class="social">
+      <a href="https://www.instagram.com/zhanlybaieva_?igsh=Y3dkM2k4N2liY2Qy" target="_blank">
+        📸 Instagram профилім
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Жаңлыбай Ақнұр — Барлық құқық қорғалған.
+  </footer>
+</body>
+</html>
